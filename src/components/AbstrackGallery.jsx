@@ -131,6 +131,7 @@ const AbstrackGallery = () => {
               <img 
                 src={image.path} 
                 alt={image.title}
+                loading="lazy"
                 className="w-full h-full object-cover transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -156,6 +157,7 @@ const AbstrackGallery = () => {
               <img 
                 src={selectedImage.path} 
                 alt={selectedImage.title}
+                loading="lazy"
                 className="max-w-full max-h-[80vh] object-contain rounded-lg mx-auto"
               />
               <button 
