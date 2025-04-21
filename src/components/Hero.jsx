@@ -32,14 +32,16 @@ const Hero = () => {
     <section id="hero" className="relative h-screen w-full overflow-hidden">
       {/* Video background - optimized with .webm format */}
       <video
-        src="/hero-background.webm"
         autoPlay
         muted
         loop
         playsInline
         preload="auto"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+        className="absolute inset-0 w-full h-full object-cover z-[-1]"
+      >
+        <source src="/herobackground.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
       
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60 z-10"></div>
